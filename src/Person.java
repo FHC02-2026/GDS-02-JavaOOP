@@ -13,7 +13,8 @@ public class Person {
     }
 
     public int getAge() {
-        return 2026 - birthDay.year;
+        int age = 2026 - birthDay.year;
+        return age;
     }
 
     public void print() {
