@@ -4,5 +4,6 @@ public class Student {
     public String firstName;
     public String lastName;
     public int matrikelNumber;
+    public String department;
 
 }
