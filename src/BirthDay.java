@@ -7,4 +7,8 @@ public class BirthDay {
     public void print() {
         System.out.println(year + "-" + month + "-" + day);
     }
+
+    public String getBirthDayAsString() {
+        return (year + "-" + month + "-" + day);
+    }
 }

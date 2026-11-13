@@ -2,7 +2,7 @@ public class Person {
 
     public String firstName;
     public String lastName;
-    public int age;
+    //public int age;
     public BirthDay birthDay; // 1990-05-01
 
     public void setBirthDay(int year, int month, int day) {
@@ -10,5 +10,17 @@ public class Person {
         birthDay.year = year;
         birthDay.month = month;
         birthDay.day = day;
+    }
+
+    public int getAge() {
+        return 2026 - birthDay.year;
+    }
+
+    public void print() {
+        System.out.println("firstName = " + firstName);
+        System.out.println("lastName = " + lastName);
+        System.out.println("age = " + getAge());
+        System.out.println("birthDay = " + birthDay.getBirthDayAsString());
+        System.out.println("------ ------- ------");
     }
 }
